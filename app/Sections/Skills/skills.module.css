@@ -1,0 +1,84 @@
+.section {
+    width: 100%;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--line-color);
+}
+
+.heading {
+    padding: 0.5rem 1rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.skillList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    list-style: none;
+    margin: 0.75rem 0;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .skillList {
+        gap: 0.5rem;
+    }
+}
+
+.skillItem {
+    display: flex;
+}
+
+.skillLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    /* light mode defaults */
+    color: var(--text-color);
+    background-color: var(--surface);
+    border: 1px solid var(--line-color);
+}
+
+/* dark mode overrides via .dark on a parent */
+:global(.dark) .skillLink {
+    color: var(--skill-text, var(--dark-skill-text));
+    background-color: var(--skill-bg, var(--dark-skill-bg));
+    border: 1px solid var(--skill-border, var(--dark-skill-border));
+}
+
+.skillLink:hover {
+    opacity: 0.8;
+    border-color: var(--mute);
+}
+
+:global(.dark) .skillLink:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.skillIcon {
+    opacity: 0.65;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.125rem;
+    flex-shrink: 0;
+}
+
+.skillLink:hover .skillIcon {
+    opacity: 1;
+}

@@ -11,7 +11,7 @@ export default function ThoughtsPage() {
                 <PostCard
                     id="1723990780145184971"
                     title="Building my portfolio with Next.js & Tailwind – lessons learned"
-                    date="Mar 2026" // Intentional future date for demo purposes
+                    date="Mar 2026"
                     claps={120}
                     tags={["Next.js", "Portfolio", "Frontend"]}
                 />
@@ -35,7 +35,8 @@ export default function ThoughtsPage() {
 
             <div className="line" />
             <div className="size-full flex items-center justify-center p-2.5">
-                <Button text={"More Blogs"} dir={"/Blogs"} fontsize={"15px"} />
+                <Button 
+                ariaLabel={"View more Blogs"} text={"More Blogs"} dir={"/Blogs"} fontsize={"15px"} />
             </div>
         </section>
     );

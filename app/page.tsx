@@ -1,30 +1,31 @@
 import Grid from "./Components/grid"
-import Hero from "./Sections/hero";
-import About from "./Sections/about";
+import Hero from "./Sections/hero/index";
+import About from "./Sections/about/index";
 import Experience from "./Sections/experience"
-import Projects from "./Sections/project";
 import Blog from "./Sections/blog";
-import Skills from "./Sections/skill"
-import Contact from "./Sections/contact"
-import { Analytics } from "@vercel/analytics/next"
+import Skills from "./Sections/Skills"
+import Contact from "./Sections/contact/index"
+// import { Analytics } from "@vercel/analytics/next"
 
 export default function page() {
   return (
     <>
-      <Grid />
-      <Analytics />
-
+      <Grid description={"Pixels"} />
+      {/* <Analytics /> */}
       <main>
         <Hero />
-        <div className="line" />
+        <div className="line" role="presentation" />
         <About />
         <Skills />
-        <Projects />
         <Experience />
         <Blog />
+        <div className="line" role="presentation" />
         <Contact />
       </main>
+      <div className="line" role="presentation" />
+      <Grid description={"Pixels"} />
       <aside className="overlay" />
+
     </>
   )
 }

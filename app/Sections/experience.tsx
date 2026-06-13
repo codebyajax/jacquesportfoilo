@@ -185,7 +185,9 @@ export default function Experience() {
             </div>
             <div className="line" />
             <div className="size-full flex items-center justify-center p-2.5 opacity-40" aria-hidden aria-busy inert>
-                <Button text={"More coming..."} dir={"/#"} fontsize={"15px"} />
+                <Button
+                    href={"/"}
+                    ariaLabel={"See more button"} text={"More coming..."} />
             </div>
             <div className="line" />
         </section>

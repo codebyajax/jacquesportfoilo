@@ -1,35 +1,39 @@
-import Link from "next/link";
+import React from 'react';
+import styled from 'styled-components';
 
-export default function Button({ text, dir, fontsize }) {
+const Button = ({ Text }) => {
     return (
-        <Link href={`${dir}`}>
-            <button
-                type="submit"
-                style={{ height: "44px" }}
-                className="
-                shrink-0 border cursor-pointer rounded-xl 
-                border-border p-px group 
-                disabled:opacity-50 disabled:cursor-not-allowed 
-                bg-white select-none
-                min-w-0
-                w-fit
-              "
-            >
-                <div
-                    className="
-                  flex size-full gap-1 items-center justify-center rounded-xl 
-                  border border-border w-full h-full 
-                  bg-[#5c5c5c] text-white 
-                  group-hover:bg-[#4a4a4a] 
-                  px-10
-                  transition duration-300
-                "
-                >
-                    <span className={`font-medium!`} style={{
-                        fontSize: fontsize
-                    }}>{text}</span>
-                </div>
-            </button>
-        </Link>
-    )
+        <StyledWrapper>
+            <button className="button">{Text}</button>
+        </StyledWrapper>
+    );
 }
+
+const StyledWrapper = styled.div`
+  /* inspired form gumroad website */
+  .button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.6em 3em;
+    background: #18181b;
+    transition: 0.2s;
+  }
+
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }`;
+
+export default Button;
