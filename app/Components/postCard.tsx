@@ -21,7 +21,6 @@ export default function PostCard({ id, title, date, claps = 0, tags = [] }: Post
                 className="post-card-link"
             >
                 <div className="post-card-body">
-
                     <p className="post-card-title">{title}</p>
 
                     <div className="post-card-date" aria-hidden="true">
@@ -50,7 +49,7 @@ export default function PostCard({ id, title, date, claps = 0, tags = [] }: Post
                         )}
 
                         {claps > 0 && tags.length > 0 && (
-                            <span className="post-card-divider" aria-hidden="true">|</span>
+                            <span className="post-card-divider select-none" aria-hidden="true">|</span>
                         )}
 
                         {tags.length > 0 && (

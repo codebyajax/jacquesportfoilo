@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "app/Components/button.jsx", "app/Components/Themetoggle.tsx"  ],
+, "app/Components/button.jsx", "app/Components/Themetoggle.tsx", "app/Sections/about/button.jsx", "app/Sections/about/socialButton.tsx"  ],
   "exclude": ["node_modules"]
 }

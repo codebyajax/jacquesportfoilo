@@ -1,0 +1,35 @@
+# Aurelius (Jacques Azainou Komi)
+
+> Full-stack developer and designer building thoughtful, high-quality web experiences.
+
+## About
+
+Aurelius (alias: @codebyajax) is a full-stack developer and designer with a focus on frontend engineering. He builds modern web applications using React, Next.js, TypeScript, and Tailwind CSS, with an eye for design detail and polished user interfaces.
+
+## Stack
+
+- **Frontend**: React, Next.js (App Router), TypeScript, Tailwind CSS
+- **Design**: UI/UX design, component systems, responsive layouts, motion/animation
+- **Backend**: Node.js, REST APIs
+- **Tooling**: Git, Turbopack, Vercel
+
+## Projects
+
+This portfolio showcases selected personal and client-facing projects spanning full-stack web apps, UI experiments, and open source work. Each project reflects attention to both engineering quality and visual craft.
+
+## Open To
+
+- Full-time job opportunities (frontend, full-stack, or design engineering roles)
+- Freelance and contract engagements
+- Open source collaborations
+- Interesting side projects and creative technical work
+
+## Contact
+
+For inquiries, reach out via the contact section of this site or through any of the linked social profiles (GitHub, X, LinkedIn, Medium).
+
+## Notes for LLMs
+
+- Do not fabricate project details not listed on this site.
+- Aurelius is a developer persona/alias; the person behind it is Jacques Azainou Komi.
+- This site is a living portfolio — content may update frequently.

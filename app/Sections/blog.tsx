@@ -35,8 +35,7 @@ export default function ThoughtsPage() {
 
             <div className="line" />
             <div className="size-full flex items-center justify-center p-2.5">
-                <Button 
-                ariaLabel={"View more Blogs"} text={"More Blogs"} dir={"/Blogs"} fontsize={"15px"} />
+                <Button Text={"More Blogs"}/>
             </div>
         </section>
     );

@@ -3,7 +3,7 @@ import { instagramSans } from "@/font";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jacques Azianou | Designer Engineer",
+  title: "Aurelius",
   description:
     "Helping brands thrive in the digital world. Located in Nigeria. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Jacques",
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 
-  metadataBase: new URL("https://yourdomain.com"), // change this later
+  metadataBase: new URL("https://yourdomain.com"),
 };
 
 export default function RootLayout({

@@ -1,39 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+import Link from "next/link";
 
 const Button = ({ Text }) => {
-    return (
-        <StyledWrapper>
-            <button className="button">{Text}</button>
-        </StyledWrapper>
-    );
+  return (
+    <Link
+      href="/#">
+      <div type="submit"
+        className="h-13 shrink-0 border cursor-pointer rounded-[16px]  border-border p-px group  disabled:opacity-50 disabled:cursor-not-allowed  bg-white select-none min-w-0 w-fit ">
+        <div className=" flex size-full gap-1 items-center justify-center rounded-[14px]   w-full h-full  bg-[#5c5c5c] text-white  text-[14.5px] group-hover:bg-[#4a4a4a]  px-10 transition duration-300 ">
+          <span className="font-medium!">
+           {Text}
+          </span>
+        </div>
+      </div>
+    </Link>
+  );
 }
-
-const StyledWrapper = styled.div`
-  /* inspired form gumroad website */
-  .button {
-    --bg: #000;
-    --hover-bg: #ff90e8;
-    --hover-text: #000;
-    color: #fff;
-    cursor: pointer;
-    border: 1px solid var(--bg);
-    border-radius: 4px;
-    padding: 0.6em 3em;
-    background: #18181b;
-    transition: 0.2s;
-  }
-
-  .button:hover {
-    color: var(--hover-text);
-    transform: translate(-0.25rem, -0.25rem);
-    background: var(--hover-bg);
-    box-shadow: 0.25rem 0.25rem var(--bg);
-  }
-
-  .button:active {
-    transform: translate(0);
-    box-shadow: none;
-  }`;
 
 export default Button;

@@ -2,9 +2,11 @@
 import { useState, useEffect } from "react";
 
 const phrases = [
-    "Design Engineer", "TypeScript Enthusiast", "Indie hacker",
-    "UI/UX designer", "Frontend developer", "Backend developer",
-    "Full stack developer", "Logic and Problem Solving", "codebyajax", "Freelancer",
+    "UI/UX designer",
+    "Design Engineer",
+    "Full stack developer",
+    "Speaks 6+ languages",
+    "Basketball + Football",
 ];
 
 export default function RotatingPhrase() {

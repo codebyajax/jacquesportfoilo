@@ -5,13 +5,11 @@ import Experience from "./Sections/experience"
 import Blog from "./Sections/blog";
 import Skills from "./Sections/Skills"
 import Contact from "./Sections/contact/index"
-// import { Analytics } from "@vercel/analytics/next"
 
 export default function page() {
   return (
     <>
       <Grid description={"Pixels"} />
-      {/* <Analytics /> */}
       <main>
         <Hero />
         <div className="line" role="presentation" />
@@ -25,7 +23,6 @@ export default function page() {
       <div className="line" role="presentation" />
       <Grid description={"Pixels"} />
       <aside className="overlay" />
-
     </>
   )
 }

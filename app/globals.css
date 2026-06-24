@@ -62,8 +62,15 @@
   -webkit-font-smothing: "grayscale";
 }
 
+* :focus-visible {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  outline-offset: 1px;
+}
+
 html {
-  font-size: 0.91rem;
+  font-size: 0.95rem;
 }
 
 html,
@@ -82,10 +89,9 @@ body {
 .overlay {
   pointer-events: none;
   user-select: none;
-  height: 100dvh;
-  height: 100vh;
+  height: 2545px;
   z-index: 1000;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -343,6 +349,10 @@ button:hover {
 }
 
 .dark .head:hover {
+  background-color: var(--dark-head-hover);
+}
+
+.dark .pop-up {
   background-color: var(--dark-head-hover);
 }
 
@@ -716,6 +726,11 @@ mark {
   display: flex;
   align-items: center;
   gap: 0.625rem;
+  transition: all 0.43s ease;
+}
+
+.pop-up {
+  background-color: #fff;
 }
 
 .button-about:hover {
@@ -732,9 +747,6 @@ mark {
   justify-content: center;
   gap: 8px;
   overflow: hidden;
-  border-radius: 0.45rem;
-  border: 1px solid var(--border-color);
-  background-color: var(--surface);
 }
 
 .point::before {
@@ -934,90 +946,6 @@ mark {
 }
 
 /* ============================================
-   QUOTE
-   ============================================ */
-
-.quote-section {
-  padding-inline: 0.8rem;
-  margin-inline: 0.5rem;
-}
-
-.quote-figure {
-  padding-block: 2.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  gap: 2.25rem;
-}
-
-.quote-mark-link {
-  opacity: 0.2;
-  transition: opacity 0.2s ease;
-  text-decoration: none;
-}
-
-.quote-mark-link:hover {
-  opacity: 0.4;
-  filter: none;
-}
-
-.quote-mark-link svg {
-  width: 2.5rem;
-  height: 2.5rem;
-  fill: var(--text-color);
-}
-
-.quote-text {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  padding-inline: 0.5rem;
-  font-weight: 700;
-  font-style: italic;
-  line-height: 1.5;
-  color: var(--text-color);
-}
-
-.quote-caption {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.quote-rule {
-  height: 1px;
-  width: 2rem;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.quote-author-link {
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  opacity: 0.8;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-  color: var(--text-color);
-  font-weight: 700;
-}
-
-.quote-author-link:hover {
-  opacity: 1;
-  filter: none;
-}
-
-.dark .quote-rule {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-@media (min-width: 640px) {
-  .quote-text {
-    font-size: 1.875rem;
-  }
-}
-
-/* ============================================
    LIGHTBOX
    ============================================ */
 
@@ -1145,7 +1073,7 @@ mark {
 
 .rotating-placeholder.hidden-phrase {
   opacity: 0;
-  filter: blur(4px);
+  filter: blur(8px);
 }
 
 .rotating-phrase {
@@ -1275,8 +1203,8 @@ mark {
    ============================================ */
 
 .tick {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.35rem;
+  height: 1.35rem;
   margin-left: 0.125rem;
   flex-shrink: 0;
 }
@@ -1399,7 +1327,6 @@ mark {
   }
 }
 
-/* dark mode */
 .dark .post-card-link:hover {
   background-color: rgba(255, 255, 255, 0.04);
 }
@@ -1467,7 +1394,7 @@ mark {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.625rem;
+  gap: 1rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -1554,4 +1481,86 @@ mark {
   opacity: 1;
 }
 
+b {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
 
+/* ============================================
+   QUOTE
+   ============================================ */
+
+.quote-figure {
+  padding-block: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  gap: 2.25rem;
+}
+
+.quote-mark-link {
+  opacity: 0.2;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.quote-mark-link:hover {
+  opacity: 0.4;
+  filter: none;
+}
+
+.quote-mark-link svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: var(--text-color);
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-inline: 0.5rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.quote-caption {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quote-rule {
+  height: 1px;
+  width: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.quote-author-link {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.quote-author-link:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.dark .quote-rule {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 640px) {
+  .quote-text {
+    font-size: 1.875rem;
+  }
+}

@@ -17,13 +17,14 @@ export default function Skills() {
                             href={`https://google.com/search?q=What+type+of+software+is+${tool}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className=" transition-all duration-300 hover:text-black hover:border-black! hover:bg-black/10  px-2 py-1 skill-stack"
+                            className="border border-black/20! transition-all duration-300 hover:text-black hover:border-black! hover:bg-black/10  px-2 py-1 skill-stack rounded-lg"
+                            aria-label={"This is " + tool + " it is one of my stacks"}
                         >
                             <Image
                                 src={`/assets/svg/${tool.toLowerCase()}.svg`}
                                 width={16}
                                 height={16}
-                                alt={tool}
+                                alt={tool + 'icon'}
                                 className="group-hover:opacity-100 opacity-65 size-4 mt-0.5" />
                             {tool}
                         </Link>

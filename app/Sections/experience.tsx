@@ -93,13 +93,13 @@ export default function Experience() {
                                     onClick={() => toggle(index)}
                                 >
                                     <div className="main flex gap-2 items-center">
-                                        <figure className="size-12 shrink-0 rounded-[10px] p-0.5 overflow-hidden border">
+                                        <figure className="size-12 shrink-0 rounded-[10px] p-[1.5px] overflow-hidden border">
                                             <Image
                                                 src={exp.companyImage}
                                                 width={45}
                                                 height={45}
                                                 loading="lazy"
-                                                className="size-full rounded-lg border object-cover"
+                                                className="size-full rounded-[8px] border object-cover"
                                                 alt={`${exp.companyName} logo`}
                                             />
                                         </figure>
@@ -185,11 +185,9 @@ export default function Experience() {
             </div>
             <div className="line" />
             <div className="size-full flex items-center justify-center p-2.5 opacity-40" aria-hidden aria-busy inert>
-                <Button
-                    href={"/"}
-                    ariaLabel={"See more button"} text={"More coming..."} />
+                <Button Text={"More coming..."}/>
             </div>
-            <div className="line" />
+            <div className="line" role="separator" />
         </section>
     );
 }

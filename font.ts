@@ -15,4 +15,15 @@ export const instagramSans = localFont({
   ],
   variable: "--font-instagram",
   display: "swap",
+  fallback: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "sans-serif",
+  ],
+  adjustFontFallback: "Arial",
+  preload: true
 });
+
+export const FONT_CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@._-";

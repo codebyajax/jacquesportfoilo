@@ -1,13 +1,32 @@
 import { MetadataRoute } from 'next';
-export default function robots(): MetadataRoute.Robots {
-    const domain = 'http://localhost:3000/'; 
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
+export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/', 
-      disallow: ['/admin/', '/private/'], 
-    }, 
-    sitemap: `${domain}/sitemap.xml`,
+    rules: [
+      {
+        allow: '/',
+        disallow: [
+          '/api/',     
+          '/.next/',   
+          '/private/',       
+          '/*.json$',        
+          '/*?*',      
+        ],
+        crawlDelay: 1,      
+        userAgent: '*',
+      },
+      {
+        userAgent: 'AhrefsBot',
+        disallow: '/',
+      },
+      {
+        userAgent: 'SemrushBot',
+        disallow: '/',
+      },
+    ],
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }
