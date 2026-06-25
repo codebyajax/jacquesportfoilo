@@ -21,7 +21,7 @@ export default function Skills() {
                             aria-label={"This is " + tool + " it is one of my stacks"}
                         >
                             <Image
-                                src={`/assets/svg/${tool.toLowerCase()}.svg`}
+                                src={`/assets/svg/${tool}.svg`}
                                 width={16}
                                 height={16}
                                 alt={tool + 'icon'}
