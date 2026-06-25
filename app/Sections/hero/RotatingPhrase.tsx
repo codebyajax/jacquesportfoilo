@@ -10,6 +10,7 @@ const phrases = [
     "Coffee → Components",
     "console.log('hello world')",
     "Reads the docs",
+    "Polyglot. 6 languages and counting",
 ];
 
 export default function RotatingPhrase() {
