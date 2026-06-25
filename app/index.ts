@@ -5,19 +5,19 @@ interface Social {
 }
 
 const mainSocials = [
-  { label: "GitHub", href: "https://github.com/codebyajax", src: "/assets/svg/github.svg", },
-  { label: "Twitter", href: "https://twitter.com/codebyajax", src: "/assets/svg/twitter.svg", },
-  { label: "Medium", href: "https://medium.com/@codebyajax", src: "/assets/svg/medium.svg", },
-  { label: "LinkedIn", href: "https://linkedin.com/in/codebyajax", src: "/assets/svg/linkedin.svg", },
-  { label: "LeetCode", href: "https://leetcode.com/codebyajax", src: "/assets/svg/leetcode.svg" },
+  { label: "GitHub", href: "https://github.com/codebyajax", src: "/assets/SVG/github.SVG", },
+  { label: "Twitter", href: "https://twitter.com/codebyajax", src: "/assets/SVG/twitter.SVG", },
+  { label: "Medium", href: "https://medium.com/@codebyajax", src: "/assets/SVG/medium.SVG", },
+  { label: "LinkedIn", href: "https://linkedin.com/in/codebyajax", src: "/assets/SVG/linkedin.SVG", },
+  { label: "LeetCode", href: "https://leetcode.com/codebyajax", src: "/assets/SVG/leetcode.SVG" },
 ];
 
 const extraSocials = [
-  { label: "Behance", href: "https://behance.net/codebyajax", src: "/assets/svg/behance.svg" },
-  { label: "Instagram", href: "https://instagram.com/codebyajax", src: "/assets/svg/instagram.svg" },
-  { label: "Bluesky", href: "https://bsky.app/profile/codebyajax", src: "/assets/svg/bluesky.svg" },
-  { label: "Youtube", href: "https://youtube.com/@codebyajax", src: "/assets/svg/youtube.svg" },
-  { label: "Discord", href: "https://discord.com/@codebyajax", src: "/assets/svg/discord.svg" },
+  { label: "Behance", href: "https://behance.net/codebyajax", src: "/assets/SVG/behance.SVG" },
+  { label: "Instagram", href: "https://instagram.com/codebyajax", src: "/assets/SVG/instagram.SVG" },
+  { label: "Bluesky", href: "https://bsky.app/profile/codebyajax", src: "/assets/SVG/bluesky.SVG" },
+  { label: "Youtube", href: "https://youtube.com/@codebyajax", src: "/assets/SVG/youtube.SVG" },
+  { label: "Discord", href: "https://discord.com/@codebyajax", src: "/assets/SVG/discord.SVG" },
 ];
 
 const techStack = [
