@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { mainSocials, extraSocials } from "@/app/index";
@@ -77,7 +76,7 @@ export default function SocialButton() {
                         rel="noopener noreferrer"
                         className="button-about px-3.75 select-none"
                     >
-                        <Image
+                        <img
                             src={src}
                             width={16}
                             height={16}
@@ -98,7 +97,7 @@ export default function SocialButton() {
                         rel="noopener noreferrer"
                         className="button-about px-3.75 select-none"
                     >
-                        <Image
+                        <img
                             src={src}
                             width={16}
                             height={16}
@@ -106,6 +105,7 @@ export default function SocialButton() {
                             style={{ width: 16, height: 16 }}
                             className="select-none pointer-events-none"
                         />
+
                         {label}
                     </Link>
                 </li>
@@ -160,7 +160,7 @@ export default function SocialButton() {
                                 onClick={closeMenu}
                                 className="button-about px-2 select-none flex items-center gap-2"
                             >
-                                <Image
+                                <img
                                     src={src}
                                     width={16}
                                     height={16}
