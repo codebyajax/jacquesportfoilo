@@ -7,6 +7,9 @@ const phrases = [
     "Full stack developer",
     "Speaks 6+ languages",
     "Basketball + Football",
+    "Coffee → Components",
+    "console.log('hello world')",
+    "Reads the docs",
 ];
 
 export default function RotatingPhrase() {

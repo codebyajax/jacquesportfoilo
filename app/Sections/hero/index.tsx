@@ -114,7 +114,7 @@ export default function index() {
 
                 <aside className="hidden sm:flex h-[87.36px] items-end justify-between flex-col" aria-label="Controls">
                     <div className="flex h-fit justify-center items-center gap-1 select-none" aria-label="2.2 thousand profile views" role="status">
-                        <Image src="/assets/svg/eye.svg" alt="eye icon" aria-hidden="true" width={16} height={16} className="opacity-50" loading="lazy" />
+                        <Image src="/assets/SVG/eye.svg" alt="eye icon" aria-hidden="true" width={16} height={16} className="opacity-50" loading="lazy" />
                         <p className="text-mutedForeground" aria-hidden="true">2.2k</p>
                     </div>
                 </aside>
