@@ -22,90 +22,34 @@ const extraSocials = [
 
 
 const techStack = [
-  {
-    tool: "React",
-  },
-  {
-    tool: "Nextjs",
-  },
-  {
-    tool: "Expo",
-  },
-  {
-    tool: "Django",
-  },
-  {
-    tool: "Express",
-  },
-  {
-    tool: "Node",
-  },
-  {
-    tool: "Bun",
-  },
-  {
-    tool: "PostgreSQL",
-  },
-  {
-    tool: "MongoDB",
-  },
-  {
-    tool: "Redis",
-  },
-  {
-    tool: "Prisma",
-  },
-  {
-    tool: "Zustand",
-  },
-  {
-    tool: "TransactQuery",
-  },
-  {
-    tool: "Postman",
-  },
-  {
-    tool: "Tailwind",
-  },
-  {
-    tool: "Shadcn",
-  },
-  {
-    tool: "Framer",
-  },
-  {
-    tool: "GSAP",
-  },
-  {
-    tool: "Javascripts",
-  },
-  {
-    tool: "Typescripts",
-  },
-  {
-    tool: "Java",
-  },
-  {
-    tool: "Python",
-  },
-  {
-    tool: "SQL",
-  },
-  {
-    tool: "Git",
-  },
-  {
-    tool: "Github",
-  },
-  {
-    tool: "Figma",
-  },
-  {
-    tool: "Docker",
-  },
-  {
-    tool: "Linux",
-  },
+  { tool: "React" },
+  { tool: "nextjs", label: "Next.js" },
+  { tool: "Expo" },
+  { tool: "Django" },
+  { tool: "Express" },
+  { tool: "Node" },
+  { tool: "Bun" },
+  { tool: "PostgreSQL" },
+  { tool: "MongoDB" },
+  { tool: "Redis" },
+  { tool: "Prisma" },
+  { tool: "Zustand" },
+  { tool: "transactquery", label: "TransactQuery" },
+  { tool: "Postman" },
+  { tool: "Tailwind" },
+  { tool: "Shadcn" },
+  { tool: "framer", label: "Framer" },
+  { tool: "GSAP" },
+  { tool: "javascripts", label: "JavaScript" },
+  { tool: "typescripts", label: "TypeScript" },
+  { tool: "Java" },
+  { tool: "Python" },
+  { tool: "SQL" },
+  { tool: "Git" },
+  { tool: "Github" },
+  { tool: "Figma" },
+  { tool: "Docker" },
+  { tool: "Linux" },
 ];
 
 export { mainSocials, extraSocials, techStack };
