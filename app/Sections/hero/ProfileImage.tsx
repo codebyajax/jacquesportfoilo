@@ -23,7 +23,7 @@ export default function ProfileImage({ src, isGlitching, glitchKey, onClick }: P
                     src={src}
                     loading="eager"
                     priority
-                    alt="Profile picture of Jacques Azainou Komi"
+                    alt="Profile picture of Jacques Azianou Komi"
                     aria-hidden="true"
                     width={96}
                     height={96}
@@ -31,7 +31,7 @@ export default function ProfileImage({ src, isGlitching, glitchKey, onClick }: P
                 />
             </button>
             <figcaption className="sr-only" aria-hidden="true">
-                Jacques Azainou Komi — profile photo
+                Jacques Azianou Komi — profile photo
             </figcaption>
         </figure>
     );

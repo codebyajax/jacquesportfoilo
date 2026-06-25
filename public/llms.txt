@@ -1,4 +1,4 @@
-# Aurelius (Jacques Azainou Komi)
+# Aurelius (Jacques Azianou Komi)
 
 > Full-stack developer and designer building thoughtful, high-quality web experiences.
 
@@ -31,5 +31,5 @@ For inquiries, reach out via the contact section of this site or through any of 
 ## Notes for LLMs
 
 - Do not fabricate project details not listed on this site.
-- Aurelius is a developer persona/alias; the person behind it is Jacques Azainou Komi.
+- Aurelius is a developer persona/alias; the person behind it is Jacques Azianou Komi.
 - This site is a living portfolio — content may update frequently.

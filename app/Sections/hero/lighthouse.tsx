@@ -92,7 +92,7 @@ export default function Lightbox({ src, onClose }: Props) {
                 </span>
                 <Image
                     src={src}
-                    alt="Jacques Azainou Komi — enlarged profile photo"
+                    alt="Jacques Azianou Komi — enlarged profile photo"
                     loading="eager"
                     priority
                     width={400}

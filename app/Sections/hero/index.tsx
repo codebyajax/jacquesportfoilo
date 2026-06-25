@@ -15,7 +15,7 @@ export default function index() {
     const [isCoolingDown, setIsCoolingDown] = useState(false);
 
     const profileImage = isNerfed ? "/assets/Images/aurelius.webp" : "/assets/Images/james.webp";
-    const name = isNerfed ? "aurelius.io" : "Azainou Komi Jacques";
+    const name = isNerfed ? "aurelius.io" : "Azianou Komi Jacques";
     const tickColor = isNerfed ? "#00aaff" : "transparent";
 
     const handleToggle = () => {
@@ -41,7 +41,7 @@ export default function index() {
             <div aria-live="polite" aria-atomic="true" className="sr-only">
                 {isNerfed
                     ? "Switched to alias identity: Aurelius"
-                    : "Switched to real identity: Jacques Azainou Komi"}
+                    : "Switched to real identity: Jacques Azianou Komi"}
             </div>
 
             <div className="line" role="presentation" />
