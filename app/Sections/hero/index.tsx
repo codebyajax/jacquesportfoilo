@@ -113,6 +113,12 @@ export default function index() {
                 </div>
 
                 <aside className="hidden sm:flex h-[87.36px] items-end justify-between flex-col" aria-label="Controls">
+                    <button className="relative w-fit z-10 cursor-pointer p-1.5 rounded-[6px] hover:bg-black/10 border border-transparent! hover:border-black/20! transition-all duration-300 text-muted hover:text-mutedForeground" aria-label="Switch to dark mode">
+                        <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+
                     <div className="flex h-fit justify-center items-center gap-1 select-none" aria-label="2.2 thousand profile views" role="status">
                         <Image src="/assets/SVG/eye.svg" alt="eye icon" aria-hidden="true" width={16} height={16} className="opacity-50" loading="lazy" />
                         <p className="text-mutedForeground" aria-hidden="true">2.2k</p>

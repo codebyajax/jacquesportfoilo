@@ -9,7 +9,7 @@ const mainSocials = [
   { label: "Twitter", href: "https://twitter.com/codebyajax", src: "/assets/SVG/Twitter.svg" },
   { label: "Medium", href: "https://medium.com/@codebyajax", src: "/assets/SVG/Medium.svg" },
   { label: "LinkedIn", href: "https://linkedin.com/in/codebyajax", src: "/assets/SVG/LinkedIn.svg" },
-  { label: "LeetCode", href: "https://leetcode.com/codebyajax", src: "/assets/SVG/Leetcode.svg" },
+  { label: "LeetCode", href: "https://leetcode.com/u/codebyajax/", src: "/assets/SVG/Leetcode.svg" },
 ];
 
 const extraSocials = [

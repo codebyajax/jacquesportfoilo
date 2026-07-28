@@ -4,7 +4,7 @@
 
 ## About
 
-Aurelius (alias: @codebyajax) is a full-stack developer and designer with a focus on frontend engineering. He builds modern web applications using React, Next.js, TypeScript, and Tailwind CSS, with an eye for design detail and polished user interfaces.
+Jacques Azianou Komi (alias: Aureleius) is a full-stack developer and designer with a focus on frontend engineering. He builds modern web applications using React, Next.js, TypeScript, and Tailwind CSS, with an eye for design detail and polished user interfaces.
 
 ## Stack
 

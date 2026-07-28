@@ -7,8 +7,6 @@ const phrases = [
     "Full stack developer",
     "Speaks 6+ languages",
     "Basketball + Football",
-    "Coffee → Components",
-    "console.log('hello world')",
     "Reads the docs",
     "Polyglot. 6 languages and counting",
 ];
@@ -32,7 +30,7 @@ export default function RotatingPhrase() {
     return (
         <div className="rotating-wrapper" aria-live="polite" aria-atomic="true">
             <p className={`rotating-placeholder${visibleIndex >= 0 ? " hidden-phrase" : " visible"}`} aria-hidden="true">
-                codebyajax
+                Design engineer
             </p>
             {phrases.map((phrase, i) => (
                 <p

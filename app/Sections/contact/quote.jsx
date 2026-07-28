@@ -10,12 +10,12 @@ export default function Quote() {
                     </svg>
                 </a>
                 <blockquote className="quote-text">
-                    "Do so much work that it would be unreasonable for you to not be successful."
+
                 </blockquote>
                 <figcaption className="quote-caption">
                     <div className="quote-rule" aria-hidden="true" />
                     <a href={HORMOZI_URL} target="_blank" rel="noopener noreferrer" className="quote-author-link">
-                        <span>Alex Hormozi</span>
+                        <span>ALEX HORMOZI</span>
                     </a>
                     <div className="quote-rule" aria-hidden="true" />
                 </figcaption>
