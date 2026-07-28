@@ -44,7 +44,7 @@ export default function About() {
                     <div className="arrow-container select-none">
                         <span className="text-lg text-black arrow-icon arrow-hover">
                             <Image
-                                src={"/assets/svg/Mail.svg"}
+                                src={"/assets/SVG/Mail.svg"}
                                 width={16}
                                 height={16}
                                 alt={'mail icon'}

@@ -17,52 +17,78 @@ type ExperienceItem = {
 
 const experiences: ExperienceItem[] = [
     {
-        companyName: "Cmon bruv",
-        companyImage: "/assets/Images/download.jpg",
-        role: "Software Engineer",
-        duration: "6 months",
-        period: "Aug 2025 – Present",
-        location: "Ikeja, Lagos City, Nigeria",
+        companyName: "Forge",
+        companyImage: "/assets/Images/forge.png",
+        role: "Founder & Full-Stack Developer",
+        duration: "Present",
+        period: "2026 – Present",
+        location: "Remote",
         isPresent: true,
         achievements: [
-            "Owned the core presentation editor, driving major performance and reliability improvements",
-            "Designed and built core editor features like drag-and-drop, resize, and keyboard shortcuts end-to-end",
-            "Owned a foundational refactor, strengthening a critical codebase to enable safer and faster production",
-            "Drove major Drive page performance improvements, resolving bugs to deliver faster, reliable experiences",
+            "Building Forge, an AI-powered development platform that transforms designs and screenshots into production-ready applications.",
+            "Designing the product architecture, frontend, backend, authentication, database schema, and deployment pipeline.",
+            "Developing reusable React and Next.js component systems with a focus on performance, accessibility, and scalability.",
+            "Creating the product branding, user experience, pricing strategy, documentation, and go-to-market plan."
         ],
-        technologies: ["Next", "Tailwind", "Typescript", "Javascript", "Postgres SQL", "Docker", "Figma"],
+        technologies: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "PostgreSQL",
+            "Tailwind CSS",
+            "Docker",
+            "Git"
+        ],
     },
 
     {
-        companyName: "Ehizua College",
-        companyImage: "/assets/Images/GSOC.png",
-        role: "Frontend Developer",
-        duration: "1 year 4 months",
-        period: "Mar 2024 – Jul 2025",
-        location: "Remote / Abuja, Nigeria",
+        companyName: "Ehizua College of Education",
+        companyImage: "/assets/Images/ehizua.png",
+        role: "Frontend Development Intern & Student Mentor",
+        duration: "Internship",
+        period: "2025",
+        location: "Nigeria",
         achievements: [
-            "Led development of a customer-facing dashboard used by +40k monthly active users",
-            "Implemented real-time collaboration features using WebSockets and Zustand",
-            "Reduced initial page load time by 47% through lazy-loading and image optimization",
-            "Mentored 8 junior developers and conducted bi-weekly code reviews",
+            "Introduced students to modern frontend development using HTML, CSS, JavaScript, and React fundamentals.",
+            "Mentored more than five students through practical coding exercises and project-based learning.",
+            "Assisted with frontend implementation and debugging while improving code quality and maintainability.",
+            "Helped students understand responsive design, version control with Git, and modern development workflows."
         ],
-        technologies: ["React", "Next.js", "Zustand", "Tailwind CSS", "TypeScript", "WebSockets", "Vercel"],
+        technologies: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Git",
+            "Tailwind CSS"
+        ],
     },
 
     {
-        companyName: "PaySwift Nigeria",
-        companyImage: "/assets/Images/Owasp.png",
-        role: "Full-Stack Engineer (Intern → Full-time)",
-        duration: "10 months",
-        period: "Apr 2023 – Jan 2024",
-        location: "Lagos, Nigeria",
+        companyName: "Independent Projects",
+        companyImage: "/assets/Images/projects.png",
+        role: "Full-Stack Developer",
+        duration: "Ongoing",
+        period: "2024 – Present",
+        location: "Remote",
         achievements: [
-            "Built payment integration module supporting Paystack, Flutterwave & bank transfers",
-            "Designed and implemented secure user authentication & KYC flow (NIN verification)",
-            "Wrote comprehensive unit & integration tests reaching 82% coverage",
-            "Optimized API endpoints reducing average response time from 1.4s → 320ms",
+            "Built full-stack web applications using React, Next.js, Express, and MongoDB.",
+            "Implemented REST APIs, authentication systems, CRUD operations, and database integrations.",
+            "Designed responsive interfaces with a strong focus on usability, performance, and SEO best practices.",
+            "Continuously explored modern tooling including Docker, GitHub Actions, and AI-assisted development workflows."
         ],
-        technologies: ["Next.js", "Node.js", "Express", "PostgreSQL", "Prisma", "Jest", "Redis", "Docker"],
+        technologies: [
+            "Next.js",
+            "React",
+            "Express",
+            "MongoDB",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node.js"
+        ],
     },
 ];
 
