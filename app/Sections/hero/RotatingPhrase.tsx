@@ -3,12 +3,10 @@ import { useState, useEffect } from "react";
 
 const phrases = [
     "UI/UX designer",
-    "Design Engineer",
     "Full stack developer",
     "Speaks 6+ languages",
     "Basketball + Football",
-    "Reads the docs",
-    "Polyglot. 6 languages and counting",
+    "Reads the docs"
 ];
 
 export default function RotatingPhrase() {

@@ -26,4 +26,30 @@ export const instagramSans = localFont({
   preload: true
 });
 
+export const italicSerif = localFont({
+  src: [
+    {
+      path: "public/assets/font/Italic-Regular.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "public/assets/font/Italic-Thin.otf",
+      weight: "400",
+      style: "light",
+    },
+  ],
+  variable: "--font-italic",
+  display: "swap",
+  fallback: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "sans-serif",
+  ],
+  adjustFontFallback: "Arial",
+  preload: true
+});
+
 export const FONT_CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@._-";

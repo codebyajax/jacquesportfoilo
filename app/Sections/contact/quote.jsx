@@ -9,13 +9,15 @@ export default function Quote() {
                         <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z" />
                     </svg>
                 </a>
-                <blockquote className="quote-text">
-
+                <blockquote className="quote font-medium! text-3xl leading-relaxed">
+                    What are you afraid of losing, when nothing in the world belongs to you.
                 </blockquote>
                 <figcaption className="quote-caption">
                     <div className="quote-rule" aria-hidden="true" />
-                    <a href={HORMOZI_URL} target="_blank" rel="noopener noreferrer" className="quote-author-link">
-                        <span>ALEX HORMOZI</span>
+                    <a href={HORMOZI_URL} target="_blank" rel="noopener noreferrer" className="quote font-medium! ">
+                        <span className="font-medium! italic">Marcus Aurelius
+                            <small className="font-medium!"> 180 CE</small>
+                        </span>
                     </a>
                     <div className="quote-rule" aria-hidden="true" />
                 </figcaption>

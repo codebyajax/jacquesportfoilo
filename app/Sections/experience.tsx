@@ -7,7 +7,7 @@ type ExperienceItem = {
     companyName: string;
     companyImage: string;
     role: string;
-    duration: string;
+    tag: string;
     period: string;
     location: string;
     achievements: string[];
@@ -15,81 +15,141 @@ type ExperienceItem = {
     isPresent?: boolean;
 };
 
+// const experiences: ExperienceItem[] = [
+//     {
+//         companyName: "Forge",
+//         companyImage: "/assets/Images/forge.png",
+//         role: "Founder & Full-Stack Developer",
+//         tag: "Present",
+//         period: "2026 – Present",
+//         location: "Remote",
+//         isPresent: true,
+//         achievements: [
+//           
+//         ],
+//         technologies: [
+//             "Next.js",
+//             "React",
+//             "TypeScript",
+//             "Node.js",
+//             "Express",
+//             "MongoDB",
+//             "PostgreSQL",
+//             "Tailwind CSS",
+//             "Docker",
+//             "Git"
+//         ],
+//     },
+
+//     {
+//         companyName: "Ehizua College of Education",
+//         companyImage: "/assets/Images/ehizua.png",
+//         role: "Frontend Development Intern & Student Mentor",
+//         tag: "Internship",
+//         period: "2025",
+//         location: "Nigeria",
+//         achievements: [
+//            
+//         ],
+//         technologies: [
+//             "HTML",
+//             "CSS",
+//             "JavaScript",
+//             "React",
+//             "Git",
+//             "Tailwind CSS"
+//         ],
+//     },
+
+//     {
+//         companyName: "Independent Projects",
+//         companyImage: "/assets/Images/projects.png",
+//         role: "Full-Stack Developer",
+//         tag: "Ongoing",
+//         period: "2024 – Present",
+//         location: "Remote",
+//         achievements: [
+//             "Built full-stack web applications using React, Next.js, Express, and MongoDB.",
+//             "Implemented REST APIs, authentication systems, CRUD operations, and database integrations.",
+//             "Designed responsive interfaces with a strong focus on usability, performance, and SEO best practices.",
+//             "Continuously explored modern tooling including Docker, GitHub Actions, and AI-assisted development workflows."
+//         ],
+//         technologies: [
+//             "Next.js",
+//             "React",
+//             "Express",
+//             "MongoDB",
+//             "TypeScript",
+//             "Tailwind CSS",
+//             "Node.js"
+//         ],
+//     },
+// ];
+
 const experiences: ExperienceItem[] = [
-    {
-        companyName: "Forge",
-        companyImage: "/assets/Images/forge.png",
-        role: "Founder & Full-Stack Developer",
-        duration: "Present",
-        period: "2026 – Present",
-        location: "Remote",
-        isPresent: true,
-        achievements: [
-            "Building Forge, an AI-powered development platform that transforms designs and screenshots into production-ready applications.",
-            "Designing the product architecture, frontend, backend, authentication, database schema, and deployment pipeline.",
-            "Developing reusable React and Next.js component systems with a focus on performance, accessibility, and scalability.",
-            "Creating the product branding, user experience, pricing strategy, documentation, and go-to-market plan."
-        ],
-        technologies: [
-            "Next.js",
-            "React",
-            "TypeScript",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "PostgreSQL",
-            "Tailwind CSS",
-            "Docker",
-            "Git"
-        ],
-    },
+    // {
+    //     companyName: "Countour",
+    //     companyImage: "/assets/Images/download.jpg",
+    //     role: "Developer | Designer",
+    //     tag: "Freelance",
+    //     period: "Jan 2026",
+    //     location: "Remote / Delaware, USA",
+    //     isPresent: true,
+    //     achievements: [
+    //         "Building FORGE™, an AI-powered development platform that transforms designs and screenshots into production-ready applications.",
+    //         "Designing the product architecture, frontend, backend, authentication, database schema, and deployment pipeline.",
+    //         "Developing reusable React and Next.js component systems with a focus on performance, accessibility, and scalability.",
+    //         "Creating the product branding, user experience, pricing strategy, documentation, and go-to-market plan."
+    //     ],
+    //     technologies: ["Figma", "Next.js", "Tailwind", "Typescript", "Javascript", "Shadcn", "Docker"],
+    // },
 
     {
-        companyName: "Ehizua College of Education",
-        companyImage: "/assets/Images/ehizua.png",
-        role: "Frontend Development Intern & Student Mentor",
-        duration: "Internship",
-        period: "2025",
-        location: "Nigeria",
+        companyName: "Ehizua College",
+        companyImage: "/assets/Images/GSOC.png",
+        role: "Frontend Developer",
+        tag: "1 year 4 months",
+        period: "April 2024 – Present",
+        location: "Ibeju, Nigeria",
         achievements: [
+            "Trained and led an Agile team of 7 frontend developers.",
             "Introduced students to modern frontend development using HTML, CSS, JavaScript, and React fundamentals.",
-            "Mentored more than five students through practical coding exercises and project-based learning.",
             "Assisted with frontend implementation and debugging while improving code quality and maintainability.",
-            "Helped students understand responsive design, version control with Git, and modern development workflows."
+            "Worked with a committee of 6 members to organise fun-activities for the employees."
         ],
-        technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Git",
-            "Tailwind CSS"
+        technologies: ["React", "Next.js", "Github", "Tailwind CSS", "JavaScript", "TypeScript", "Vercel"],
+    },
+    {
+        companyName: "Lulu Scents",
+        companyImage: "/assets/Images/Logo-2.png",
+        role: "Project Manager",
+        tag: "1 year 4 months",
+        period: "August 2026 – Present",
+        location: "Lagos, Nigeria",
+        achievements: [
+            "Managed the end-to-end development of a luxury perfume e-commerce website from planning to launch.",
+            "Coordinated client requirements, project timelines, and communication throughout development.",
+            "Oversaw implementation of the product catalog, search, shopping cart, and checkout experience.",
+            "Ensured the website aligned with the client's brand identity and business goals."
         ],
+        technologies: ["Next.js", "Github", "Tailwind CSS", "TypeScript"],
     },
 
-    {
-        companyName: "Independent Projects",
-        companyImage: "/assets/Images/projects.png",
-        role: "Full-Stack Developer",
-        duration: "Ongoing",
-        period: "2024 – Present",
-        location: "Remote",
-        achievements: [
-            "Built full-stack web applications using React, Next.js, Express, and MongoDB.",
-            "Implemented REST APIs, authentication systems, CRUD operations, and database integrations.",
-            "Designed responsive interfaces with a strong focus on usability, performance, and SEO best practices.",
-            "Continuously explored modern tooling including Docker, GitHub Actions, and AI-assisted development workflows."
-        ],
-        technologies: [
-            "Next.js",
-            "React",
-            "Express",
-            "MongoDB",
-            "TypeScript",
-            "Tailwind CSS",
-            "Node.js"
-        ],
-    },
+    // {
+    //     companyName: "PaySwift Nigeria",
+    //     companyImage: "/assets/Images/Owasp.png",
+    //     role: "Full-Stack Engineer (Intern → Full-time)",
+    //     tag: "10 months",
+    //     period: "Apr 2023 – Jan 2024",
+    //     location: "Lagos, Nigeria",
+    //     achievements: [
+    //         "Built payment integration module supporting Paystack, Flutterwave & bank transfers",
+    //         "Designed and implemented secure user authentication & KYC flow (NIN verification)",
+    //         "Wrote comprehensive unit & integration tests reaching 82% coverage",
+    //         "Optimized API endpoints reducing average response time from 1.4s → 320ms",
+    //     ],
+    //     technologies: ["Next.js", "Node.js", "Express", "PostgreSQL", "Prisma", "Jest", "Redis", "Docker"],
+    // },
 ];
 
 export default function Experience() {
@@ -133,12 +193,13 @@ export default function Experience() {
                                         <div className="flex flex-col gap-1">
                                             <span className="flex items-center gap-4">
                                                 <h1 className="sm:text-[1.20rem] text-[1.05rem] leading-[0.90] font-bold"
-                                                    style={exp.isPresent ? { filter: "Blur(4px)" } : { filter: "" }}>
+                                                    // style={exp.isPresent ? { filter: "Blur(4px)" } : { filter: "" }}
+                                                    >
 
 
                                                     {exp.companyName}
                                                 </h1>
-                                                {exp.isPresent && <div className="cont smaller-hide">{exp.duration} </div>}
+                                                {exp.isPresent && <div className="cont smaller-hide">{exp.tag} </div>}
 
                                             </span>
                                             <p className="text-[.9rem] opacity-75">{exp.role} </p>
@@ -154,7 +215,7 @@ export default function Experience() {
                                         <button
                                             aria-label="toggle details"
                                             type="button"
-                                            className="smaller-hide opacity-70 transition-transform duration-300"
+                                            className="smaller-hide opacity-70 transition-transform tag-300"
                                             style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
                                         >
                                             <svg
@@ -164,7 +225,7 @@ export default function Experience() {
                                                 viewBox="0 0 24 24"
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
-                                                className="text-muted group-hover:text-title transition-colors duration-300"
+                                                className="text-muted group-hover:text-title transition-colors tag-300"
                                                 height="18"
                                                 width="18"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +237,7 @@ export default function Experience() {
                                 </div>
 
                                 <div
-                                    className="experience-body ml-2 transition-all duration-500 ease-in-out"
+                                    className="experience-body ml-2 transition-all tag-500 ease-in-out"
                                     style={{
                                         display: "grid",
                                         gridTemplateRows: isOpen ? "1fr" : "0fr",
@@ -211,7 +272,7 @@ export default function Experience() {
             </div>
             <div className="line" />
             <div className="size-full flex items-center justify-center p-2.5 opacity-40" aria-hidden aria-busy inert>
-                <Button Text={"More coming..."}/>
+                <Button Text={"More coming..."} />
             </div>
             <div className="line" role="separator" />
         </section>

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://your-domain.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://komiazianou.vercel.app/";
 
 
 const routes: Array<{

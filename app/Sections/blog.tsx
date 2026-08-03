@@ -13,29 +13,29 @@ export default function ThoughtsPage() {
                     title="Building my portfolio with Next.js & Tailwind – lessons learned"
                     date="Mar 2026"
                     claps={120}
-                    tags={["Next.js", "Portfolio", "Frontend"]}
+                    tags={["Figma", "Next.js", "Tailwind"]}
                 />
                 <div className="line" />
                 <PostCard
                     id="1122334455667788990"
-                    title="Implementing a Drag-and-Drop Editor Feature"
+                    title="Learning Typescript"
                     date="Feb 2026"
                     claps={85}
-                    tags={["Figma", "Java", "Python", "UX"]}
+                    tags={["Typescript", "Function", "Parameters", "Objects"]}
                 />
                 <div className="line" />
                 <PostCard
                     id="1234567890123456789"
-                    title="My C# Journey"
-                    date="Dec 2025"
+                    title="My Backend Journey"
+                    date="August 2026"
                     claps={1000}
-                    tags={["C#", "Programming", "Journey"]}
+                    tags={["Node", "Express", ".env", "MongoDB"]}
                 />
             </div>
 
             <div className="line" />
-            <div className="size-full flex items-center justify-center p-2.5">
-                <Button Text={"More Blogs"}/>
+            <div className="size-full flex items-center justify-center p-2.5 opacity-40" aria-hidden aria-busy inert>
+                <Button Text={"More coming..."} />
             </div>
         </section>
     );
