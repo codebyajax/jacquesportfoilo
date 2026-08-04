@@ -11,23 +11,19 @@ const personJsonLd = {
       name: "Jacques Azianou",
       givenName: "Jacques",
       familyName: "Azianou",
-      url: "https://komiazianou.vercel.app",
+      url: "https://komiazianou.vercel.app/",
       image: "https://komiazianou.vercel.app/aurelius.png",
       email: "mailto:jackthe1first@gmail.com",
       jobTitle: "Fullstack Developer & UI/UX Designer",
       description:
-        "Fullstack Developer & UI/UX Designer specializing in React, Next.js, JavaScript, TypeScript, Node.js, and modern web technologies.",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Lagos",
-        addressCountry: "NG",
-      },
-      sameAs: ["https://github.com/codebyajax"],
+        "Fullstack Developer & UI/UX Designer building fast, accessible, and modern web applications with React, Next.js, JavaScript, Node.js, and contemporary design systems.",
+      sameAs: [
+        "https://github.com/codebyajax",
+      ],
       knowsAbout: [
         "React",
         "Next.js",
         "JavaScript",
-        "TypeScript",
         "Node.js",
         "Express",
         "Django",
@@ -41,17 +37,74 @@ const personJsonLd = {
         "UX Design",
         "Web Development",
       ],
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Lagos",
+        addressCountry: "Nigeria",
+      },
     },
+
     {
       "@type": "WebSite",
       "@id": "https://komiazianou.vercel.app/#website",
-      url: "https://komiazianou.vercel.app",
+      url: "https://komiazianou.vercel.app/",
       name: "Jacques Azianou",
+      image: "https://komiazianou.vercel.app/aurelius.png",
+      inLanguage: "en",
       description:
-        "Portfolio of Jacques Azianou, Fullstack Developer & UI/UX Designer.",
+        "Portfolio of Jacques Azianou, a Fullstack Developer and UI/UX Designer specializing in modern web applications, UI engineering, and interactive experiences.",
+      keywords: [
+        "Jacques Azianou",
+        "Portfolio",
+        "Fullstack Developer",
+        "Frontend Developer",
+        "UI Designer",
+        "React",
+        "Next.js",
+        "JavaScript",
+        "Node.js",
+        "Tailwind CSS",
+        "GSAP",
+      ],
       publisher: {
         "@id": "https://komiazianou.vercel.app/#person",
       },
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://komiazianou.vercel.app/#webpage",
+      url: "https://komiazianou.vercel.app/",
+      name: "Jacques Azianou | Fullstack Developer & UI/UX Designer",
+      description:
+        "Portfolio of Jacques Azianou showcasing projects, skills, and experience in fullstack development and UI/UX design.",
+      isPartOf: {
+        "@id": "https://komiazianou.vercel.app/#website",
+      },
+      about: {
+        "@id": "https://komiazianou.vercel.app/#person",
+      },
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        url: "https://komiazianou.vercel.app/aurelius.png",
+      },
+      inLanguage: "en",
+      breadcrumb: {
+        "@id": "https://komiazianou.vercel.app/#breadcrumb",
+      },
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://komiazianou.vercel.app/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://komiazianou.vercel.app/",
+        },
+      ],
     },
   ],
 };
