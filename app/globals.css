@@ -737,7 +737,7 @@ mark {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: 0.45rem;
   transition: all 0.43s ease;
 }
 

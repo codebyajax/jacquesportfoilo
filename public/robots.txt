@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://komiazianou.vercel.app
+
+# Sitemaps
+Sitemap: https://komiazianou.vercel.app/sitemap.xml

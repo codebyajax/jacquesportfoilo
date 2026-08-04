@@ -15,94 +15,7 @@ type ExperienceItem = {
     isPresent?: boolean;
 };
 
-// const experiences: ExperienceItem[] = [
-//     {
-//         companyName: "Forge",
-//         companyImage: "/assets/Images/forge.png",
-//         role: "Founder & Full-Stack Developer",
-//         tag: "Present",
-//         period: "2026 – Present",
-//         location: "Remote",
-//         isPresent: true,
-//         achievements: [
-//           
-//         ],
-//         technologies: [
-//             "Next.js",
-//             "React",
-//             "TypeScript",
-//             "Node.js",
-//             "Express",
-//             "MongoDB",
-//             "PostgreSQL",
-//             "Tailwind CSS",
-//             "Docker",
-//             "Git"
-//         ],
-//     },
-
-//     {
-//         companyName: "Ehizua College of Education",
-//         companyImage: "/assets/Images/ehizua.png",
-//         role: "Frontend Development Intern & Student Mentor",
-//         tag: "Internship",
-//         period: "2025",
-//         location: "Nigeria",
-//         achievements: [
-//            
-//         ],
-//         technologies: [
-//             "HTML",
-//             "CSS",
-//             "JavaScript",
-//             "React",
-//             "Git",
-//             "Tailwind CSS"
-//         ],
-//     },
-
-//     {
-//         companyName: "Independent Projects",
-//         companyImage: "/assets/Images/projects.png",
-//         role: "Full-Stack Developer",
-//         tag: "Ongoing",
-//         period: "2024 – Present",
-//         location: "Remote",
-//         achievements: [
-//             "Built full-stack web applications using React, Next.js, Express, and MongoDB.",
-//             "Implemented REST APIs, authentication systems, CRUD operations, and database integrations.",
-//             "Designed responsive interfaces with a strong focus on usability, performance, and SEO best practices.",
-//             "Continuously explored modern tooling including Docker, GitHub Actions, and AI-assisted development workflows."
-//         ],
-//         technologies: [
-//             "Next.js",
-//             "React",
-//             "Express",
-//             "MongoDB",
-//             "TypeScript",
-//             "Tailwind CSS",
-//             "Node.js"
-//         ],
-//     },
-// ];
-
 const experiences: ExperienceItem[] = [
-    // {
-    //     companyName: "Countour",
-    //     companyImage: "/assets/Images/download.jpg",
-    //     role: "Developer | Designer",
-    //     tag: "Freelance",
-    //     period: "Jan 2026",
-    //     location: "Remote / Delaware, USA",
-    //     isPresent: true,
-    //     achievements: [
-    //         "Building FORGE™, an AI-powered development platform that transforms designs and screenshots into production-ready applications.",
-    //         "Designing the product architecture, frontend, backend, authentication, database schema, and deployment pipeline.",
-    //         "Developing reusable React and Next.js component systems with a focus on performance, accessibility, and scalability.",
-    //         "Creating the product branding, user experience, pricing strategy, documentation, and go-to-market plan."
-    //     ],
-    //     technologies: ["Figma", "Next.js", "Tailwind", "Typescript", "Javascript", "Shadcn", "Docker"],
-    // },
 
     {
         companyName: "Ehizua College",
@@ -134,22 +47,6 @@ const experiences: ExperienceItem[] = [
         ],
         technologies: ["Next.js", "Github", "Tailwind CSS", "TypeScript"],
     },
-
-    // {
-    //     companyName: "PaySwift Nigeria",
-    //     companyImage: "/assets/Images/Owasp.png",
-    //     role: "Full-Stack Engineer (Intern → Full-time)",
-    //     tag: "10 months",
-    //     period: "Apr 2023 – Jan 2024",
-    //     location: "Lagos, Nigeria",
-    //     achievements: [
-    //         "Built payment integration module supporting Paystack, Flutterwave & bank transfers",
-    //         "Designed and implemented secure user authentication & KYC flow (NIN verification)",
-    //         "Wrote comprehensive unit & integration tests reaching 82% coverage",
-    //         "Optimized API endpoints reducing average response time from 1.4s → 320ms",
-    //     ],
-    //     technologies: ["Next.js", "Node.js", "Express", "PostgreSQL", "Prisma", "Jest", "Redis", "Docker"],
-    // },
 ];
 
 export default function Experience() {
@@ -185,7 +82,7 @@ export default function Experience() {
                                                 width={45}
                                                 height={45}
                                                 loading="lazy"
-                                                className="size-full rounded-[8px] border object-cover"
+                                                className="size-full rounded-lg border object-cover"
                                                 alt={`${exp.companyName} logo`}
                                             />
                                         </figure>
@@ -193,16 +90,13 @@ export default function Experience() {
                                         <div className="flex flex-col gap-1">
                                             <span className="flex items-center gap-4">
                                                 <h1 className="sm:text-[1.20rem] text-[1.05rem] leading-[0.90] font-bold"
-                                                    // style={exp.isPresent ? { filter: "Blur(4px)" } : { filter: "" }}
                                                     >
-
-
                                                     {exp.companyName}
                                                 </h1>
                                                 {exp.isPresent && <div className="cont smaller-hide">{exp.tag} </div>}
 
                                             </span>
-                                            <p className="text-[.9rem] opacity-75">{exp.role} </p>
+                                            <p className="text-[.9rem] opacity-85">{exp.role} </p>
                                         </div>
                                     </div>
 
