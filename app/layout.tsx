@@ -111,80 +111,56 @@ const personJsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://komiazianou.vercel.app"),
+
   title: {
     default: "Jacques Azianou",
     template: "%s | Jacques Azianou",
   },
+
   description:
-    "Fullstack Developer & UI/UX Designer crafting fast, accessible, and visually engaging digital experiences with React, Next.js, TypeScript, and modern web technologies.",
+    "Fullstack Developer & UI/UX Designer specializing in React, Next.js, JavaScript, Node.js and modern web experiences.",
+
   keywords: [
     "Jacques Azianou",
     "Frontend Developer",
     "Fullstack Developer",
     "UI Designer",
-    "UX Designer",
-    "React Developer",
+    "React",
     "Next.js",
     "JavaScript",
-    "TypeScript",
-    "Tailwind CSS",
-    "GSAP",
+    "Node.js",
     "Portfolio",
-    "Nigeria",
-    "Lagos",
   ],
-  authors: [
-    {
-      name: "Jacques Azianou",
-      url: "https://komiazianou.vercel.app",
-    },
-  ],
-  creator: "Jacques Azianou",
-  publisher: "Jacques Azianou",
-  category: "Technology",
-  alternates: {
-    canonical: "/",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-      "max-snippet": -1,
-    },
-  },
+
   openGraph: {
-    title: "Jacques Azianou • Fullstack Developer & UI/UX Designer",
+    title: "Jacques Azianou",
     description:
-      "Crafting fast, accessible, and visually engaging digital experiences with React, Next.js, TypeScript, and modern web technologies.",
+      "Fullstack Developer & UI/UX Designer specializing in React, Next.js, JavaScript, Node.js and modern web experiences.",
     url: "https://komiazianou.vercel.app",
     siteName: "Jacques Azianou",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/aurelius.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Jacques Azianou Portfolio",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Jacques Azianou • Fullstack Developer",
-    description: "Building fast, modern and interactive digital experiences.",
+    title: "Jacques Azianou",
+    description:
+      "Fullstack Developer & UI/UX Designer specializing in React, Next.js, JavaScript, Node.js and modern web experiences.",
     creator: "@codebyajax",
-    images: ["/aurelius.png"],
+    images: ["/twitter-image"],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+
+  alternates: {
+    canonical: "https://komiazianou.vercel.app",
   },
 };
 
